@@ -1,44 +1,61 @@
-.under-title{
-				font-size: 14px;
-				padding: 0;
-				margin: -11px 0 50px;
-}
-.title{
-				padding: 0;
+/* REUSABLE */
 
-}
-.about{
-				display: flex;
-				justify-content: center;
-				margin-top: 40px;
-}
-.about-item{
-				margin-right: 30px;
-}
-.about-item:last-child{
-				margin-right: 0;
-}
-.about-item img{
-				border-radius: 20px;
-}
-.about-item p{
-				text-align: left;
-				margin-left: 5px;
-}
-.about-item h5{
-				text-align: center;
-				text-transform: uppercase;
-				font-weight: bold;
-}
 hr{
 				margin: 65px 0;
 }
 .section-title{
 				font-size: 23px;
 				font-weight: bold;
+				text-align: left;
 }
+/* SIDEBAR */
+.under-title{
+				font-size: 14px;
+				padding: 0;
+				margin: -11px 0 50px;
+}
+/* PORTFOLIO */
+#portfolio h4{
+				margin-left: 5px;
+}
+.container{
+				display: grid;
+				grid-template-columns: 50% 50%;
+}
+.container img{
+				width: 365px;
+				margin: 5px;
+				border-radius: 12px;
+}
+/* ABOUT US */
+.about-container{
+				display: flex;
+				width: 100%;
+				justify-content: center;
+}
+.about-container div{
+				padding-right: 20px;
+}
+.about-container div:last-of-type{
+				padding-right: 0;
+}
+.about-container img{
+				border-radius: 15px;
+}
+.about-container h4{
+				text-align: center;
+				font-weight: bold;
+}
+.about-container p{
+				text-align: left;
+				margin: 10px;
+}
+
+/*  */
+
 form input{
 				text-align: center;
+				outline: none;
 }
 .button-submit{
 				width: 100%;
@@ -55,6 +72,28 @@ ul{
 .item-title{
 				color: #3a3a3a;
 }
-.faq dl dt{
-				color: #9c27b0;
+dl{
+				margin-bottom: 100px;
+}
+dt {
+				background-color: #fff;
+				padding: 20px;
+				color: #3a3a3a;
+				font-weight: bold;
+				margin-top: 20px;
+				border-radius: 3px 3px 0 0;
+				cursor: pointer;
+}
+
+dd {
+				padding: 10px 20px;
+				background-color: #EEEFED;
+				border-radius: 0 0 3px 3px;
+				color: #3a3a3a;
+				margin: 0;
+}
+
+dt a,
+dt a:hover {
+				color: #323232;
 }

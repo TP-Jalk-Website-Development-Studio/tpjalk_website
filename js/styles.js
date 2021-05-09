@@ -20,11 +20,43 @@ $('#menu-about').on('click', function(event) {
     event.preventDefault()
     $("html, body").animate({
         scrollTop: $('#about').offset().top
-    }, 1500);
+    }, 700);
 });
 $('#menu-contact').on('click', function(event) {
     event.preventDefault()
     $("html, body").animate({
         scrollTop: $('#contact').offset().top
-    }, 1500);
+    }, 700);
 });
+$('#menu-charge').on('click', function(event) {
+    event.preventDefault()
+    $("html, body").animate({
+        scrollTop: $('#charge').offset().top
+    }, 700);
+});
+
+// faq
+
+(function($) {
+
+    var list = $('.list');
+
+    // skryjeme elementy
+    list.find('dd').slideUp();
+
+    // zobrazime dd po kliknuti na term
+    list.find('dt').on('click', function(event)
+    {
+        $(this).next().slideToggle()
+            .siblings('dd').slideUp();
+
+        event.preventDefault();
+    });
+
+    // nechceme ist
+    $('a.nope').on('click', function(event) {
+        alert('NIE, RADSEJ ALERT!');
+        event.preventDefault();
+    });
+
+})(jQuery);
