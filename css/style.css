@@ -4,16 +4,19 @@ hr{
 				margin: 65px 0;
 }
 .section-title{
-				font-size: 23px;
+				font-size: 30px;
 				font-weight: bold;
 				text-align: left;
+				font-family: 'Poppins', sans-serif;
 }
 /* SIDEBAR */
 .under-title{
 				font-size: 14px;
 				padding: 0;
 				margin: -11px 0 50px;
+				font-family: 'Poppins', sans-serif;
 }
+
 /* PORTFOLIO */
 #portfolio h4{
 				margin-left: 5px;
@@ -28,30 +31,48 @@ hr{
 				border-radius: 12px;
 }
 /* ABOUT US */
-.about-container{
-				display: flex;
-				width: 100%;
-				justify-content: center;
+.about-grid-1st{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				margin: 0;
 }
-.about-container div{
-				padding-right: 20px;
+.about-grid-1st img{
+				width: 400px;
+				margin-bottom: 0px;
 }
-.about-container div:last-of-type{
-				padding-right: 0;
+.about-grid-1st p{
+				font-size: 19px;
+				text-align: right;
+				margin-top: 50px;
 }
-.about-container img{
-				border-radius: 15px;
-}
-.about-container h4{
-				text-align: center;
-				font-weight: bold;
-}
-.about-container p{
+.about-grid-2st img{
+					width: 400px;
+					margin-right: -108px;
+					margin-bottom: 65px;
+				 right: 0;
+	}
+.about-grid-2st p{
+				font-size: 19px;
 				text-align: left;
-				margin: 10px;
+				margin-top: 90px;
+}
+.about-grid-2st{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				margin: 0;
+}
+.abouthr{
+				margin: 0;
+				margin-bottom: 65px;
 }
 
 /*  */
+.sliding{
+				transition: 2s;
+}
+.sliding:hover{
+				width: 97%;
+}
 
 form input{
 				text-align: center;
@@ -72,8 +93,16 @@ ul{
 .item-title{
 				color: #3a3a3a;
 }
+.faq{
+				width: 100%;
+}
+.fa-question-circle{
+				font-size: 16px;
+				padding-left: 1px;
+}
 dl{
-				margin-bottom: 100px;
+				width: 100%;
+				margin: 0 15px 100px 15px;
 }
 dt {
 				background-color: #fff;

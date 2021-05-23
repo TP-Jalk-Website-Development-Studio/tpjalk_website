@@ -16,6 +16,12 @@ function onClick(element) {
     var captionText = document.getElementById("caption");
     captionText.innerHTML = element.alt;
 }
+$('#menu-portfolio').on('click', function(event) {
+    event.preventDefault()
+    $("html, body").animate({
+        scrollTop: $('body').offset().top
+    }, 700);
+});
 $('#menu-about').on('click', function(event) {
     event.preventDefault()
     $("html, body").animate({

@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/w3style.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/queries.css">
 <style>
   body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
@@ -18,7 +21,7 @@
   <h3 class="w3-padding-top-64 w3-center title"><b>TP Jalk</b></h3>
   <h5 class="under-title">Development Studio</h5>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="#" onclick="w3_close()" id="menu-portfolio" class="w3-bar-item w3-button">PORTFOLIO</a>
   <a href="#about" onclick="w3_close()" id="menu-about" class="w3-bar-item w3-button">ABOUT US</a>
   <a href="#charge" onclick="w3_close()" id="menu-charge" class="w3-bar-item w3-button">HOW MUCH WE CHARGE</a>
   <a href="#contact" onclick="w3_close()" id="menu-contact" class="w3-bar-item w3-button" >CONTACT US</a>
@@ -37,7 +40,7 @@
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Push down content on small screens -->
-    <div class="w3-hide-large" style="margin-top:83px"></div>
+  <div class="w3-hide-large" style="margin-top:83px"></div>
 
 
   <!-- Modal for full size images on click-->
@@ -64,50 +67,42 @@
       <hr>
       <div id="about">
         <h4 class="section-title">About Us</h4>
-        <div class="about-container">
-          <div class="">
-            <img src="img/bitmoji.png" alt="">
-            <h4>Lorem Ipsum</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam aut delectus, deleniti dignissimos doloribus excepturi explicabo harum maxime molestiae nemo nisi odio, officia omnis placeat, quae quis voluptas.</p>
-          </div>
-          <div class="">
-            <img src="img/bitmoji.png" alt="">
-            <h4>Lorem Ipsum</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam aut delectus, deleniti dignissimos doloribus excepturi explicabo harum maxime molestiae nemo nisi odio, officia omnis placeat, quae quis voluptas.</p>
-          </div>
-          <div>
-            <img src="img/bitmoji.png" alt="">
-            <h4>Lorem Ipsum</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam aut delectus, deleniti dignissimos doloribus excepturi explicabo harum maxime molestiae nemo nisi odio, officia omnis placeat, quae quis voluptas.</p>
-          </div>
+        <div class="about-grid-1st">
+          <img src="img/software-engineer.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, iste, quam? Animi asperiores assumenda culpa cumque distinctio eius eos, eveniet laboriosam, nemo obcaecati odio provident quaerat temporibus voluptate voluptatem voluptatibus.</p>
+        </div>
+        <div class="about-grid-2st">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, iste, quam? Animi asperiores assumenda culpa cumque distinctio eius eos, eveniet laboriosam, nemo obcaecati odio provident quaerat temporibus voluptate voluptatem voluptatibus.</p>
+          <img src="img/developer-team.png" alt="">
         </div>
       </div>
-      <hr class="w3-opacity">
+      <hr class="abouthr">
       <h4 class="w3-padding-16 section-title">Technical Skills</h4>
       <p class="w3-wide">HTML</p>
-      <div class="w3-white w3-round-xxlarge">
-        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-xxlarge" style="width:97%">97%</div>
+      <div class="w3-white w3-round-large">
+        <div class="sliding w3-container w3-padding-small w3-center w3-grey w3-round-large" style="width:97%">97%</div>
       </div>
       <p class="w3-wide">CSS</p>
-      <div class="w3-white w3-round-xxlarge">
-        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-xxlarge" style="width:85%">85%</div>
+      <div class="w3-white w3-round-large">
+        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-large" style="width:85%">85%</div>
       </div>
       <p class="w3-wide">JAVASCRIPT</p>
-      <div class="w3-white w3-round-xxlarge">
-        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-xxlarge" style="width:75%">75%</div>
+      <div class="w3-white w3-round-large">
+        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-large" style="width:75%">75%</div>
       </div>
       <p class="w3-wide">PHP</p>
-      <div class="w3-white w3-round-xxlarge">
-        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-xxlarge" style="width:70%">70%</div>
+      <div class="w3-white w3-round-large">
+        <div class="w3-container w3-padding-small w3-center w3-grey w3-round-large" style="width:70%">70%</div>
       </div>
       <hr class="w3-opacity">
       <h4 class="w3-padding-16 section-title" id="charge">How much we charge</h4>
       <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
+        <div class="charge w3-third w3-margin-bottom">
           <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
             <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
             <li class="w3-padding-16">Web Coding</li>
             <li class="w3-padding-16">Custom Design</li>
+            <li class="w3-padding-16">Static Website</li>
             <li class="w3-padding-16">up to 3GB of files</li>
             <li class="w3-padding-16">---</li>
             <li class="w3-padding-16">
@@ -121,10 +116,11 @@
         </div>
 
         <div class="w3-third">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <ul class="charge w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
             <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
             <li class="w3-padding-16">Web Coding</li>
             <li class="w3-padding-16">Custom Design</li>
+            <li class="w3-padding-16">Dynamic Website</li>
             <li class="w3-padding-16">up to 15GB of files</li>
             <li class="w3-padding-16">24/7 support</li>
             <li class="w3-padding-16">
@@ -138,10 +134,11 @@
         </div>
 
         <div class="w3-third">
-          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <ul class="charge w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
             <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
             <li class="w3-padding-16">Web Coding</li>
             <li class="w3-padding-16">Custom Design</li>
+            <li class="w3-padding-16">Dynamic Website</li>
             <li class="w3-padding-16">up to 7GB of files</li>
             <li class="w3-padding-16">24/7 support</li>
             <li class="w3-padding-16">
@@ -185,9 +182,13 @@
 
   <!-- Footer -->
 
-  <div class="faq " style="width: 600px; margin: 0 auto">
-    <h4 class="section-title">FAQ</h4>
+  <div class="faq " style="max-width: 600px; margin: 0 auto">
     <dl class="list">
+      <h4 class="section-title">FAQ
+        <abbr title="Frequented Asked Questions">
+          <i class="far fa-question-circle"></i>
+        </abbr>
+      </h4>
       <dt>Why to choose us?</dt>
       <dd>We have very simple reply to this Question, We love what We am doing, so We are doing it for Cheap price, with Big Effort and Professionaly!</dd>
 
@@ -206,7 +207,10 @@
 
   <!-- End page content -->
 </div>
-
+<script
+        src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+        data-auto-a11y="true"
+></script>
 <script src="js/jquery.js"></script>
 <script src="js/styles.js"></script>
 </body>
